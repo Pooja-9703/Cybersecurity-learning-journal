@@ -287,3 +287,101 @@ It is a popular open-source software stack used to host dynamic web applications
 
 ---
 
+# B. Computer Types
+
+## Laptop
+
+- Includes a built-in screen and keyboard.
+- Designed for portable everyday computing.
+- Battery powered.
+- Uses compact cooling components such as:
+  - Small fan
+  - Heat pipes
+  - Heat sink
+
+---
+
+## Desktop
+
+- Includes a screen and keyboard.
+- Designed for sustained performance at a fixed location.
+- Uses wall power.
+- Larger cooling components provide improved airflow and cooling.
+- More internal space results in better cooling and sustained performance.
+
+---
+
+## Workstation
+
+- Includes a screen and keyboard.
+- Designed for precision and reliability in professional workloads.
+- ECC RAM and cache memory are more common.
+- Prioritizes accuracy and reliability during long or complex computations.
+
+---
+
+## Server
+
+- Usually operates without a dedicated screen or keyboard.
+- Provides services to multiple users over a network.
+- Runs continuously.
+- Handles requests from multiple users simultaneously.
+- Redundant power reduces single points of failure.
+- Uptime improves when redundancy is combined with backups and monitoring.
+
+---
+
+## Smartphone
+
+- Pocket-sized computer optimized for battery life and connectivity.
+- Examples:
+  - iPhone
+  - Android phones
+
+---
+
+## Tablet
+
+- Touch-first computer with a larger screen.
+- Examples:
+  - iPad
+  - Drawing tablet
+
+---
+
+## IoT Device
+
+A network-connected device designed for a specific purpose.
+
+Examples include:
+
+- Thermostat
+- Smart doorbell
+- Fitness tracker
+
+### IoT (Internet of Things)
+
+IoT refers to a network of physical objects embedded with sensors and software that allow them to collect and exchange data over the Internet.
+
+These devices range from household appliances to industrial equipment and vehicles.
+
+---
+
+## Embedded Computer
+
+A computer built into another device.
+
+Examples include:
+
+- Coffee maker controller
+- Automatic door sensor
+- Lamp dimmer chip
+
+### IoT vs Embedded
+
+Both IoT devices and embedded computers are often small and designed for a specific purpose.
+
+The key difference is connectivity:
+
+- **IoT devices** connect to a network to send data or receive commands.
+- **Embedded computers** may not connect to any network and instead perform dedicated tasks within the device.
