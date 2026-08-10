@@ -1,4 +1,4 @@
-# A: Operating Systems Introduction
+# A. Operating Systems Introduction
 
 ## Operating System
 
