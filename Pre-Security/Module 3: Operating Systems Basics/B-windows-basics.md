@@ -311,19 +311,19 @@ Windows provides these protections as part of the operating system, without requ
 
 It provides access to different areas of protection, including:
 
-#### Virus & Threat Protection
+#### 1. Virus & Threat Protection
 
 Helps protect the system against viruses, malware, and other threats.
 
-#### Firewall & Network Protection
+#### 2. Firewall & Network Protection
 
 Helps manage firewall settings and protect the computer from unauthorized network connections.
 
-### App & Browser Control
+#### 3. App & Browser Control
 
 Helps protect against potentially dangerous applications, files, and websites.
 
-#### Device Security
+#### 4. Device Security
 
 Provides security features designed to protect the device and its hardware.
 
@@ -344,15 +344,15 @@ It can:
 
 Windows Defender Firewall uses different network profiles depending on the type of network the computer is connected to.
 
-#### Domain Network
+#### 1. Domain Network
 
 Used when the computer is connected to a domain network.
 
-#### Private Network
+#### 2. Private Network
 
 Used for trusted networks, such as a home or lab network.
 
-#### Public Network
+#### 3. Public Network
 
 Used for untrusted networks, such as public Wi-Fi.
 
@@ -395,9 +395,13 @@ Linux distributions can provide both:
 
 The CLI is particularly important for system administration, automation, and cybersecurity work.
 
+---
+
 ### Firewall
 
 A security tool, hardware or software, that is used to filter network traffic by stopping unauthorized incoming & outgoing traffic.
+
+---
 
 ### DOS (Disk OS)
 
