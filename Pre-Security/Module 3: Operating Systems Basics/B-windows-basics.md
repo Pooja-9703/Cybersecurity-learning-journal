@@ -1,4 +1,4 @@
-# Section B: Windows Basics
+# B. Windows Basics
 
 Before Windows had its current polished look, Microsoft operating systems were much simpler.
 
