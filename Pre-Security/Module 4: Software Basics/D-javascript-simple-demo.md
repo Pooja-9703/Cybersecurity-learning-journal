@@ -50,55 +50,41 @@ const MAX_NUMBER = 20;
 const rl = readline.createInterface({ input, output });
 
 try {
-    const secret =
-        Math.floor(
-            Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)
-        ) + MIN_NUMBER;
+  const secret =
+    Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER;    // MIN_NUMBER <= secret <= MAX_NUMBER
 
-    // MIN_NUMBER <= secret <= MAX_NUMBER
+  let tries = 0;
+  let guess = 0; // start with a value that cannot be the secret 
 
-    let tries = 0;
-    let guess = 0;
+  console.log("I'm thinking of a number between", MIN_NUMBER, "and", MAX_NUMBER);
 
-    // Start with a value that cannot be the secret.
-    // Since secret is between 1 and 20, 0 cannot be the secret.
+  // Repeat until the user guesses the secret number.
+  while (guess !== secret) {
+    const text = await rl.question("Take a guess: ");    // rl.question() returns text (a string)
 
-    console.log(
-        "I'm thinking of a number between",
-        MIN_NUMBER,
-        "and",
-        MAX_NUMBER
-    );
+    // If the user didn't type digits, we avoid crashing and ask again.
+    if (!/^\d+$/.test(text)) {    // True only if all characters are digits
+      console.log("Please type a whole number (like 7).");
+    } else {
+      guess = parseInt(text, 10);   
+      tries = tries + 1; 
 
-    // Repeat until the user guesses the secret number.
-    while (guess !== secret) {
-        const text = await rl.question("Take a guess: ");
-
-        // If the user didn't type digits, avoid crashing and ask again.
-        if (!/^\d+$/.test(text)) {
-            // True only if all characters are digits.
-            console.log("Please type a whole number.");
-        } else {
-            guess = parseInt(text, 10);
-
-            // Convert the text to a number.
-            tries = tries + 1;
-
-            // Give a hint using if / else if / else.
-            if (guess < MIN_NUMBER || guess > MAX_NUMBER) {
-                console.log("That number is out of range. Try again.");
-            } else if (guess < secret) {
-                console.log("Too low, try again.");
-            } else if (guess > secret) {
-                console.log("Too high, try again.");
-            } else {
-                console.log("You got it in", tries, "tries!");
-            }
-        }
+      // Give a hint using if / else if / else.
+      if (guess < MIN_NUMBER || guess > MAX_NUMBER) {
+        console.log("That number is out of range. Try again.");
+      } else if (guess < secret) {
+        console.log("Too low, try again.");
+      } else if (guess > secret) {
+        console.log("Too high, try again.");
+      } else {
+        console.log("You got it in", tries, "tries!");
+      }
     }
+  }
 } finally {
-    rl.close();
+  rl.close();
 }
+
 ```
 
 ### Key Concepts Used
