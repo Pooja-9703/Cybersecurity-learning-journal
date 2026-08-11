@@ -7,6 +7,8 @@
 - `2^8 = 256`
 - Therefore, a byte can represent values from **0 to 255**.
 
+---
+
 ## RGB Colors
 
 RGB colors use **3 bytes**:
@@ -21,6 +23,8 @@ Therefore:
 
 - **24 bits = 6 hexadecimal digits = 3 bytes**
 - Each RGB component can have a value from **0–255**.
+
+---
 
 ## Hexadecimal to Binary Representation
 
@@ -42,6 +46,8 @@ Therefore:
 | `D` | `1101` |
 | `E` | `1110` |
 | `F` | `1111` |
+
+---
 
 ## Example: Hexadecimal Color to Binary
 
@@ -67,6 +73,8 @@ Separate the RGB components:
 **Answer:**
 
 `#EB0037` → `11101011 00000000 00110111`
+
+---
 
 ## Example: Hexadecimal Color to Decimal
 
@@ -137,6 +145,8 @@ It uses the digits:
 | `6` | `6` | `110` |
 | `7` | `7` | `111` |
 
+---
+
 ## Hexadecimal and Binary
 
 Each hexadecimal digit represents **4 bits**.
@@ -152,6 +162,8 @@ Therefore:
 So the hexadecimal value `FF` in binary is:
 
 `11111111`
+
+---
 
 ## Example: Hexadecimal to Decimal
 
@@ -172,6 +184,8 @@ Using place values:
 **Answer:**
 
 `AB` → **171**
+
+---
 
 ### Number System Bases
 
