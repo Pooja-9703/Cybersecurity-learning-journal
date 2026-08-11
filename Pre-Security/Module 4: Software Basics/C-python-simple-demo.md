@@ -61,7 +61,7 @@ while guess != secret:
         print("Please type a whole number.")
     else:
         guess = int(text)
-        tries = tries + 1 # increases the number of attempts by 1
+        tries = tries + 1  # increases the number of attempts by 1
 
         # Give a hint using if/elif/else
         if guess < MIN_NUMBER or guess > MAX_NUMBER:
